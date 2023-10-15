@@ -376,9 +376,11 @@ GameObject:
   - component: {fileID: 5951088247254175037}
   - component: {fileID: 1999082805285895339}
   - component: {fileID: 902492654261976248}
+  - component: {fileID: 6150544754507066162}
+  - component: {fileID: 6150544754507066165}
   m_Layer: 0
   m_Name: DungeonPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -431,8 +433,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterController: {fileID: 1999082805285895339}
+  playerCamera: {fileID: 0}
   Speed: 10
-  RotationSpeed: 100
+  RotationSpeed: 1
+--- !u!114 &6150544754507066162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475423749752887175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e02d25ad0abbf4498665df1c322a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxStamina: 50
+  maxMana: 20
+  coins: 0
+  inventoryUI: {fileID: 0}
+--- !u!114 &6150544754507066165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475423749752887175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371d088558ff91a4f932cc533ee149c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7494719460105126164
 GameObject:
   m_ObjectHideFlags: 0
