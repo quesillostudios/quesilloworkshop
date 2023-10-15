@@ -200,7 +200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2998042}
-  m_LocalRotation: {x: -0.0000000058760374, y: 0.9661042, z: -0.2581523, w: -0.000000021990369}
+  m_LocalRotation: {x: 0.0000000058760365, y: 0.9661042, z: -0.2581523, w: 0.000000021990365}
   m_LocalPosition: {x: 0, y: 2.5, z: 0.79999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -242,6 +242,63 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &464678614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777769537303312724, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: m_Name
+      value: DungeonCoin (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
 --- !u!1001 &525693019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -249,8 +306,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1320746275378208404, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: CoinValue
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -258,7 +323,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1713921832}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1713921832}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -270,7 +343,19 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -278,7 +363,15 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1536,7 +1629,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749756001}
-  m_LocalRotation: {x: -0.0000000044418664, y: 0.96610427, z: -0.25815228, w: -0.00000001662316}
+  m_LocalRotation: {x: 0.0000000044418655, y: 0.96610427, z: -0.25815228, w: 0.000000016623156}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1552,6 +1645,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1320746275378208404, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: CoinValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: audioSource
       value: 
@@ -1561,11 +1658,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1713921832}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1713921832}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1577,7 +1686,19 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1585,7 +1706,15 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1645,8 +1774,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1320746275378208404, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: CoinValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1654,7 +1791,15 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1713921832}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1713921832}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1666,7 +1811,19 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1674,7 +1831,15 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1813,11 +1978,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1713921832}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1713921832}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1829,7 +2006,19 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
@@ -1837,7 +2026,15 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
       propertyPath: obtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921448847504259462, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
+      propertyPath: OnObtainedCoin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8258254057555436526, guid: b25365145ed8a8a48b37b4c687b6b3a4, type: 3}
