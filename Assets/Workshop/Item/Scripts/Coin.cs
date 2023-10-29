@@ -8,7 +8,6 @@ public class Coin : Item
     
     public override void TryPick(Collider possiblePlayer)
     {
-        //base.TryPick(possiblePlayer);
         PlayerData playerData = possiblePlayer.GetComponent<PlayerData>();
 
         if (playerData == null) return; // Si el jugador no tiene PlayerData se rompe la funcion, no se ejecuta lo de abajo

@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour // Component
+public class PlayerMovement : MonoBehaviour
 {
     public CharacterController CharacterController;
     public Camera playerCamera;
     public float Speed;
     public float RotationSpeed;
+    public float JumpForce = 5f;
+    public float Gravity = 9.8f;
 
     private float _horizontalInput = 0f;
     private float _verticalInput = 0f;
+    private float _verticalVelocity = 0f;
     
     private float _turnSmoothVelocity;
 
@@ -29,6 +32,11 @@ public class PlayerMovement : MonoBehaviour // Component
             Vector3 moveDirection = Quaternion.Euler(0f, targetRotation, 0f) * Vector3.forward;
             CharacterController.Move(moveDirection.normalized * (Speed * Time.deltaTime));
         }
+
+         // Aplicar gravedad
+        _verticalVelocity -= Gravity * Time.deltaTime;
+        Vector3 gravityVector = new Vector3(0f, _verticalVelocity, 0f);
+        CharacterController.Move(gravityVector * Time.deltaTime);
     }
 
     private float DoRotate()
@@ -44,6 +52,17 @@ public class PlayerMovement : MonoBehaviour // Component
     {
         GetDirections();
         DoMovement();
-        // TODO: Queda pendiente añadir gravedad al jugador
+        DoJump();
     }   
+
+    private void DoJump()
+    {
+        if (CharacterController.isGrounded) // Verificar si el personaje está en el suelo
+        {
+            if (Input.GetButtonDown("Jump")) // Verificar si se ha presionado el botón de salto
+            {
+                _verticalVelocity = JumpForce; // Asignar una fuerza vertical para el salto
+            }
+        }
+    }
 }

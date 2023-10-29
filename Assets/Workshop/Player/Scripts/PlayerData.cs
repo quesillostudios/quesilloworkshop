@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerData : MonoBehaviour // Componente
 {
@@ -9,23 +11,30 @@ public class PlayerData : MonoBehaviour // Componente
     [SerializeField] private int maxMana; // 20
 
     [Header("Inventory")]
-    [SerializeField] private int coins;
-
-    [Header("UI")]
-    [SerializeField] private InventoryUI inventoryUI;
+    [SerializeField] private PlayerValueFloat coins;
 
     private float _health;
     private float _stamina;
     private float _mana;
 
+    public static Action OnCoinIncrease; // Evento de C# que puede ser usado en Unity, pero no depende del motor
+    public static Action<float> OnCoinChange;
+
+    public void Start()
+    {
+        OnCoinChange?.Invoke(coins.Quantity);
+    }
+
     public void IncreaseCoins(int coinsValue)
     {
-        coins += coinsValue; // coins = coins + coinsValue
-        inventoryUI.SetCoinText(coins);
+        coins.Quantity += coinsValue; // coins = coins + coinsValue
+        OnCoinChange?.Invoke(coins.Quantity);
+        OnCoinIncrease?.Invoke(); // ? Si OnCoinIncrease no es null (si  tiene subscriptores), invoca el evento
     }
 
     public void ResetCoins()
     {
-        coins = 0;
+        coins.Quantity = 0;
+        OnCoinChange?.Invoke(coins.Quantity);
     }
 }

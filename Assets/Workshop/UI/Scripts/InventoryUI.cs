@@ -5,7 +5,17 @@ public class InventoryUI : MonoBehaviour
 {
     public TMP_Text coinText;
 
-    public void SetCoinText(int coinsValue)
+    private void OnEnable()
+    {
+        PlayerData.OnCoinChange += SetCoinText; // += para suscribir
+    }
+
+    private void OnDisable()
+    {
+        PlayerData.OnCoinChange -= SetCoinText; // -= para desuscribir
+    }
+
+    public void SetCoinText(float coinsValue)
     {
         coinText.text = coinsValue.ToString();
     }
