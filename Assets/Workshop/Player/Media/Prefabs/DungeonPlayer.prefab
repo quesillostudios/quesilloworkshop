@@ -432,9 +432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84e02d25ad0abbf4498665df1c322a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  maxStamina: 50
-  maxMana: 20
+  health: {fileID: 11400000, guid: 1c23a34adfff2ba429ca008563fffc64, type: 2}
+  mana: {fileID: 11400000, guid: 838d79335f80e714db3b0ae885556378, type: 2}
   coins: {fileID: 11400000, guid: abd8c57d0b89d8549847ac7a1c1e5be7, type: 2}
 --- !u!114 &902492654261976248
 MonoBehaviour:

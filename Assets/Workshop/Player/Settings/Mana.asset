@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ef38e99f4d4f943adcc8246f3a01bf, type: 3}
-  m_Name: Coins
+  m_Name: Mana
   m_EditorClassIdentifier: 
   MinQuantity: 0
-  MaxQuantity: 0
+  MaxQuantity: 100
   ResetValuesOnInitialize: 1
-  ResetTypeSelector: 0
+  ResetTypeSelector: 2

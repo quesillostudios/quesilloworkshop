@@ -200,8 +200,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2998042}
-  m_LocalRotation: {x: 0.000000008301511, y: 0.98182976, z: -0.18976389, w: 0.00000004295164}
-  m_LocalPosition: {x: 0, y: 4, z: -0.64000034}
+  m_LocalRotation: {x: -0.000000008301511, y: 0.98182976, z: -0.18976389, w: -0.00000004295164}
+  m_LocalPosition: {x: 0, y: 4, z: 0.10999966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1258,7 +1258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132359322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: -0.64000034}
+  m_LocalPosition: {x: 0, y: 4, z: 0.10999966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1473,7 +1473,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1713921831}
   - component: {fileID: 1713921832}
-  - component: {fileID: 1713921833}
   m_Layer: 0
   m_Name: AudioMaster
   m_TagString: Untagged
@@ -1512,19 +1511,6 @@ MonoBehaviour:
   - trackName: Coin
     track: {fileID: 8300000, guid: cbe29bfaaaccd1142aa117c0a9f5f566, type: 3}
     channel: {fileID: -5738750711874898004, guid: 33e75ddf00ab24a42a1c1c0503269bae, type: 2}
---- !u!114 &1713921833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713921830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f783b0f92443aff4485d984de7bed651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioController: {fileID: 1713921832}
 --- !u!1 &1749756001
 GameObject:
   m_ObjectHideFlags: 3
@@ -1594,7 +1580,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749756001}
-  m_LocalRotation: {x: 0.0000000022243831, y: 0.98182976, z: -0.1897639, w: 0.000000011508855}
+  m_LocalRotation: {x: -0.0000000060771286, y: 0.98182976, z: -0.1897639, w: -0.000000031442784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1964,7 +1950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5951088247254175037, guid: 7c6d8494799ec4145b18043770caef6c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.64
+      value: -8.89
       objectReference: {fileID: 0}
     - target: {fileID: 5951088247254175037, guid: 7c6d8494799ec4145b18043770caef6c, type: 3}
       propertyPath: m_LocalRotation.w
