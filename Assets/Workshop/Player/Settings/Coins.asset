@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinQuantity: 0
   MaxQuantity: 0
+  NoLimits: 1
+  _quantity: 7
   ResetValuesOnInitialize: 1
-  ResetTypeSelector: 0
+  ResetTypeSelector: 1

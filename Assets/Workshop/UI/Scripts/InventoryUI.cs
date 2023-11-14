@@ -4,18 +4,19 @@ using TMPro;
 public class InventoryUI : MonoBehaviour
 {
     public TMP_Text coinText;
+    public PlayerValueFloat Coins;
 
     private void OnEnable()
     {
-        PlayerData.OnCoinChange += SetCoinText; // += para suscribir
+        Coins.OnChange += SetCoinText; // += para suscribir
     }
 
     private void OnDisable()
     {
-        PlayerData.OnCoinChange -= SetCoinText; // -= para desuscribir
+        Coins.OnChange -= SetCoinText; // -= para desuscribir
     }
 
-    public void SetCoinText(float coinsValue)
+    private void SetCoinText(float coinsValue)
     {
         coinText.text = coinsValue.ToString();
     }

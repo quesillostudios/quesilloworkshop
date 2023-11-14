@@ -7,36 +7,28 @@ public class StatusHUD : MonoBehaviour
     public Slider HealthSlider;
     public Slider ManaSlider;
 
+    public PlayerValueFloat Health;
+    public PlayerValueFloat Mana;
+
     private void OnEnable()
     {
-        PlayerData.OnStatsInitialized += Configure;
-        PlayerData.OnHealthChange += OnHealthChange;
-        PlayerData.OnManaChange += OnManaChange;
+        Health.OnChange += OnHealthChange;
+        Mana.OnChange += OnManaChange;
     }
 
     private void OnDisable()
     {
-        PlayerData.OnStatsInitialized -= Configure;
-        PlayerData.OnHealthChange -= OnHealthChange;
-        PlayerData.OnManaChange -= OnManaChange;
-    }
-
-    private void Configure(PlayerValueFloat health, PlayerValueFloat mana)
-    {
-        HealthSlider.minValue = health.MinQuantity;
-        HealthSlider.maxValue = health.MaxQuantity;
-
-        ManaSlider.minValue = mana.MinQuantity;
-        ManaSlider.maxValue = mana.MaxQuantity;
+        Health.OnChange -= OnHealthChange;
+        Mana.OnChange -= OnManaChange;
     }
 
     private void OnHealthChange(float health)
     {
-        HealthSlider.value = health;
+        HealthSlider.value = MathExtra.PercentMax(health, Health.MaxQuantity);
     }
 
     private void OnManaChange(float mana)
     {
-        ManaSlider.value = mana;
+        ManaSlider.value = MathExtra.PercentMax(mana, Mana.MaxQuantity);
     }
 }
